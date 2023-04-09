@@ -1,0 +1,28 @@
+# Vim temporary files
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swo
+*.un~
+
+# Vim backup files
+*~
+.*~
+
+# Vim session files
+Session.vim
+
+# Vim undo files
+*.un
+*.bak
+
+# Vim view files
+*.viminfo
+
+# Netrw files
+**/netrw**
+
+# Vim help tags
+doc/tags
