@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
     }
     
     -- use { 'rose-pine/neovim', as = 'rose-pine' }
+    use { "alexghergh/nvim-tmux-navigation" }
     
 
 end)
