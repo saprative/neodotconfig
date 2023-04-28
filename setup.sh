@@ -7,7 +7,7 @@ echo "Setting up dot config files of Saprative Jana"
 
 # Symbolink files
 #ln -sf ~/dotfiles/.vimrc ~/
-#ln -sf ~/dotfiles/.tmux.conf ~/
+ln -sf ~/dotfiles/.tmux.conf ~/
 #ln -sf ~/dotfiles/.emacs ~/
 #ln -sf ~/dotfiles/.gitconfig ~/
 #ln -sf ~/dotfiles/.bash_profile ~/

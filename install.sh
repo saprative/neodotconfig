@@ -1,11 +1,35 @@
 #!/bin/bash
 
-# Update apt-get 
-sudo apt-get update
+
+
+# Check if Git is already installed
+if ! command -v zsh &> /dev/null
+then
+    # Update apt-get 
+    sudo apt-get update
+
+
+    # If Git is not installed, install it
+    echo "Git is not installed. Installing Git..."
+    sudo apt-get install zsh -y
+    echo "Git installation complete."
+
+    # Oh My Zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+else
+    # If Git is already installed, print a message
+    echo "Git is already installed."
+fi
+
 
 # Check if Git is already installed
 if ! command -v git &> /dev/null
 then
+    # Update apt-get 
+    sudo apt-get update
+
+
     # If Git is not installed, install it
     echo "Git is not installed. Installing Git..."
     sudo apt-get install git -y
@@ -18,6 +42,10 @@ fi
 # Check if Tmux is already installed
 if ! command -v tmux &> /dev/null
 then
+    # Update apt-get 
+    sudo apt-get update
+
+
     # If Tmux is not installed, install it
     echo "Tmux is not installed. Installing Tmux..."
     sudo apt-get install tmux -y
@@ -29,6 +57,9 @@ fi
 
 if ! command -v nvim &> /dev/null
 then
+    # Update apt-get 
+    sudo apt-get update
+
     # If Nvim is not installed, install it
     echo "Nvim is not installed. Installing Nvim..."
     sudo add-apt-repository ppa:neovim-ppa/unstable
