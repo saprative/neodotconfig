@@ -32,7 +32,19 @@ return require('packer').startup(function(use)
     }
     
     -- use { 'rose-pine/neovim', as = 'rose-pine' }
+
     use { "alexghergh/nvim-tmux-navigation" }
+
+    use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+        require('dashboard').setup {
+          -- config
+        }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+    }
     
 
 end)

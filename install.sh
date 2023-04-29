@@ -15,7 +15,7 @@ then
     echo "Git installation complete."
 
     # Oh My Zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 else
     # If Git is already installed, print a message
@@ -71,3 +71,6 @@ else
     echo "Nvim is already installed."
 fi
 
+# Installing
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+sudo apt-get install exuberant-ctags
